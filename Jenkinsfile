@@ -1,10 +1,9 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/Una210/student-devops-app.git'
+    stage('Clone') {
+         steps {
+             git branch: 'main', url: 'https://github.com/Una210/student-devops-app.git'
             }
         }
 
