@@ -1,9 +1,11 @@
 pipeline {
     agent any
 
-    stage('Clone') {
-         steps {
-             git branch: 'main', url: 'https://github.com/Una210/student-devops-app.git'
+    stages {
+
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Una210/student-devops-app.git'
             }
         }
 
@@ -31,5 +33,6 @@ pipeline {
                 bat 'docker run -d -p 3000:3000 student-app'
             }
         }
+
     }
 }
