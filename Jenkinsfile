@@ -30,7 +30,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 3000:3000 student-app'
+                bat 'docker run -d -p 3001:3000 student-app'
             }
         }
 
