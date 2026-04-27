@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'YOUR_GITHUB_REPO_LINK'
+                git 'https://github.com/Una210/student-devops-app.git'
             }
         }
 
